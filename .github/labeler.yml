@@ -1,0 +1,21 @@
+# Documentation: https://github.com/actions/labeler
+
+"area/core":
+  - changed-files:
+      - any-glob-to-any-file: 'core/**/*'
+
+"area/cli":
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'cmd/**/*'
+          - 'pkg/**/*'
+
+"area/infra":
+  - changed-files:
+      - any-glob-to-any-file: '.github/**/*'
+
+"area/docs":
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'docs/**/*'
+          - '**/*.md'
