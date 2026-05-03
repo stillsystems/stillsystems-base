@@ -1,32 +1,17 @@
 name: CI
-
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
-  # This is a starter workflow. 
-  # Uncomment the block that matches your project's language.
-
-  # --- For Go Projects ---
-  # go-ci:
-  #   uses: stillsystems/.github/.github/workflows/reusable-go-ci.yml@main
-
-  # --- For Node.js Projects ---
-  # node-ci:
-  #   uses: stillsystems/.github/.github/workflows/reusable-node-ci.yml@main
-
-  # --- For Python Projects ---
-  # python-ci:
-  #   uses: stillsystems/.github/.github/workflows/reusable-python-ci.yml@main
-
-  placeholder:
-    name: Setup Required
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Instruction
-        run: |
-          echo "Welcome to your new Still Systems repository!"
-          echo "Please edit .github/workflows/ci.yml to enable the appropriate reusable workflow."
+      - uses: actions/checkout@v6
+      - name: Run CI
+        run: echo "Running CI..."
