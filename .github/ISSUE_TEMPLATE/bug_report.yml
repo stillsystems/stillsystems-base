@@ -1,0 +1,61 @@
+name: 🐛 Bug Report
+description: Report a bug to help us improve Still Systems.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🧱 Still Systems Engineering Standard
+        Thank you for reporting this issue. To resolve bugs efficiently, we require precise technical details.
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: 🔍 Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the problem...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🛠️ Steps to Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Run '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: ✅ Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 💻 Environment
+      multiple: true
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - VS Code Extension
+        - CLI
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📜 Logs/Screenshots
+      description: Attach logs or paste screenshots if applicable.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 📋 Final Checks
+      options:
+        - label: I have searched for existing issues.
+          required: true
+        - label: I am using the latest version of the tool.
+          required: true

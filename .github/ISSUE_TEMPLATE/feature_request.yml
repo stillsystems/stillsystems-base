@@ -1,0 +1,37 @@
+name: 🚀 Feature Request
+description: Propose a new idea for Still Systems.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 💡 Idea Engineering
+        Have a great idea? We'd love to hear it!
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 🔍 Feature Description
+      description: A clear and concise description of what the feature is.
+      placeholder: I want to be able to...
+    validations:
+      required: true
+  - type: textarea
+    id: problem-solved
+    attributes:
+      label: 🧱 Problem it Solves
+      description: What problem does this solve? Is it a common use case?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🛣️ Alternatives Considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 📋 Final Checks
+      options:
+        - label: I have searched for existing feature requests.
+          required: true
+        - label: This is not a support request (use Discussions for that).
+          required: true
